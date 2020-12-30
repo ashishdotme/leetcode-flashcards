@@ -29,32 +29,32 @@
   - [Two pointers](https://leetcode.com/list?selectedList=5njc6ooe)
 
 ## Patterns
-- Sliding Window
-  - input - linked list, array, string
-  - questions type - longest/shortest substring, subarray
-- Dynamic Programming
-  - questions type - maximum/minimum subarray/array/subset
-- Two Pointers
-  - input - sorted array or linked list
-  - questions type - find pair, tripler or subarray
-- Fast and slow pointers
+- **Sliding Window**
+  - *input* - linked list, array, string
+  - *questions type* - longest/shortest substring, subarray
+- **Dynamic Programming**
+  - *questions type* - maximum/minimum subarray/array/subset
+- **Two Pointers**
+  - *input* - sorted array or linked list
+  - *questions type* - find pair, tripler or subarray
+- **Fast and slow pointers**
   - input - linked list or array
-  - questions type - length of linked list, position of element
-- Merge Intervals
-  - questions type - overlapping intervals, mutually exclusive intervals, maximum cpu load
-- Cyclic sort
-  - input - sorted array
-  - questions type - missing/duplicate/smallest number in sorted array
-- Inplace reversal of linked list
-  - question type - reverse linked list without extra memory, reverse sublist, reverse every k-element sub-list
-- BFS
-  - questions type - traverse tree level by level, zig zag traversal
-- DFS
-  - questions type - traverse inorder, preorder, postorder or searching node closer to leaf
-- Two heaps
-  - questions type - smallest/largest elements of set, scheduling, priority queue
-- Backtracking
-  - questions type - permutations
+  - *questions type* - length of linked list, position of element
+- **Merge Intervals**
+  - *questions type* - overlapping intervals, mutually exclusive intervals, maximum cpu load
+- **Cyclic sort**
+  - *input* - sorted array
+  - *questions type* - missing/duplicate/smallest number in sorted array
+- **Inplace reversal of linked list**
+  - *questions type* - reverse linked list without extra memory, reverse sublist, reverse every k-element sub-list
+- **BFS**
+  - *questions type* - traverse tree level by level, zig zag traversal
+- **DFS**
+  - *questions type* - traverse inorder, preorder, postorder or searching node closer to leaf
+- **Two heaps**
+  - *questions type* - smallest/largest elements of set, scheduling, priority queue
+- **Backtracking**
+  - *questions type* - permutations
 
 ## Support
 
