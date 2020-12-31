@@ -1,5 +1,4 @@
 from datetime import timezone
-import httpx
 import git
 import os
 import re

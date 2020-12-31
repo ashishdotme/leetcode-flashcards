@@ -1,4 +1,5 @@
 GitPython
+datetime
 sqlite-utils
 sqlite-diffable
 beautifulsoup4
