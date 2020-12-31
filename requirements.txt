@@ -1,0 +1,4 @@
+GitPython
+sqlite-utils
+sqlite-diffable
+beautifulsoup4

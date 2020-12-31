@@ -1,0 +1,50 @@
+{
+  "name": "leetcode-flashcards",
+  "version": "1.0.0",
+  "author": "Ashish Patel",
+  "homepage": "https://ashish.me",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^25.1.3",
+    "@types/lodash": "^4.14.166",
+    "@types/node": "^13.7.4",
+    "@types/react": "^16.9.22",
+    "@types/react-dom": "^16.9.5",
+    "ashishdotme-ui": "^1.1.7",
+    "babel-eslint": "10.0.3",
+    "history": "^4.10.1",
+    "lodash": "^4.17.20",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-markdown": "^5.0.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "remark-gfm": "^1.0.0",
+    "semantic-ui-react": "^0.88.2",
+    "typescript": "^3.8.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

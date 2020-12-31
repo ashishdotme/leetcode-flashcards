@@ -1,0 +1,29 @@
+[
+  {
+    "path": "docs_array_01-two-sum.md",
+    "slug": "01-two-sum",
+    "topic": "array",
+    "title": "Two sum",
+    "url": "https://github.com/ashsihdotme/leetcode-flashcards/blob/master/docs/array/01-two-sum.md",
+    "front": "Not Given an array of integers, return indices of the two numbers such that they add up to a specific target.\n\n[2, 7, 11, 15], 9 => [0, 1]",
+    "back": "Data Structure:\n- hashtable: maintain a mapping of each element in the array to its index\n\nAlgorithm: Two-pass Hash Table\n1. In the first iteration, add each element's value and its index to the table.\n2. In the second iteration, check if each element's complement (target - nums[i]) exists in the table.\n3. Beware that the complement must not be nums[i] itself.\n\nTime complexity: O(n)\nSpace complexity: O(n)"
+  },
+  {
+    "path": "docs_array_02-add-two-numbers.md",
+    "slug": "02-add-two-numbers",
+    "topic": "array",
+    "title": "Two sum",
+    "url": "https://github.com/ashsihdotme/leetcode-flashcards/blob/master/docs/array/02-add-two-numbers.md",
+    "front": "Given an array of integers, return indices of the two numbers such that they add up to a specific target.\n\n[2, 7, 11, 15], 9 => [0, 1]",
+    "back": "Data Structure:\n- hashtable: maintain a mapping of each element in the array to its index\n\nAlgorithm: Two-pass Hash Table\n1. In the first iteration, add each element's value and its index to the table.\n2. In the second iteration, check if each element's complement (target - nums[i]) exists in the table.\n3. Beware that the complement must not be nums[i] itself.\n\nTime complexity: O(n)\nSpace complexity: O(n)"
+  },
+  {
+    "path": "docs_array_02-add-two-numbers.md",
+    "slug": "02-add-two-numbers",
+    "topic": "dynamic programming",
+    "title": "Three sum",
+    "url": "https://github.com/ashsihdotme/leetcode-flashcards/blob/master/docs/array/02-add-two-numbers.md",
+    "front": "Hehehe an array of integers, return indices of the two numbers such that they add up to a specific target.\n\n[2, 7, 11, 15], 9 => [0, 1]",
+    "back": "TESTSETE Structure:\n- hashtable: maintain a mapping of each element in the array to its index\n\nAlgorithm: Two-pass Hash Table\n1. In the first iteration, add each element's value and its index to the table.\n2. In the second iteration, check if each element's complement (target - nums[i]) exists in the table.\n3. Beware that the complement must not be nums[i] itself.\n\nTime complexity: O(n)\nSpace complexity: O(n)"
+  }
+]
