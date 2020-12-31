@@ -1,0 +1,21 @@
+import React, { useContext } from 'react'
+import { CardContext } from '../../context/CardContext'
+import Card from './Card'
+
+interface Props {
+  cards: any[]
+}
+
+const CardDetails = (props: Props) => {
+  const context = useContext(CardContext)
+  const { cardId, cardTopic } = context
+  const filteredReponse =
+    cardTopic === 'All' ? props.cards : props.cards.filter((card) => card.topic === cardTopic)
+  const cardDetails = filteredReponse.map((card) => {
+    return <Card card={card} />
+  })
+
+  return cardDetails[cardId]
+}
+
+export default CardDetails

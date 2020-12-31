@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useReducer } from 'react'
+import * as _ from 'lodash'
 import { createHashHistory } from 'history'
 import data from '../data/output.json'
 
@@ -31,11 +32,12 @@ const Provider: React.FC<Props> = ({ children }) => {
   const cardIdReducer = (cardId: number, action: string) => {
     const cardSetLength =
       cardTopic === 'All'
-        ? response.length
-        : response.filter((card) => card.topic === cardTopic).length
+        ? data.length
+        : data.filter((card) => card.topic === _.lowerCase(cardTopic)).length
     switch (action) {
       case 'next':
         if (cardId === cardSetLength - 1) {
+          history.push('/')
           return 0
         }
         if (cardId <= cardSetLength - 1) {
