@@ -38,7 +38,7 @@ def build_database(repo_path):
     all_times = created_changed_times(repo_path)
     db = sqlite_utils.Database(repo_path / "flashcards.db")
     table = db.table("flashcards", pk="path")
-    for filepath in root.glob("*/**/*.md"):
+    for filepath in root.glob("docs/**/*.md"):
         fpFront = filepath.open()
         fpBack = filepath.open()
         title = fpFront.readline().lstrip("#").strip()
@@ -62,7 +62,7 @@ def build_database(repo_path):
             table.upsert(record, alter=True)
 
     table.enable_fts(
-        ["title", "body"], tokenize="porter", create_triggers=True, replace=True
+        ["title", "front"], tokenize="porter", create_triggers=True, replace=True
     )
 
 

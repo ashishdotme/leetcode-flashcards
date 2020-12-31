@@ -1,0 +1,45 @@
+name: Build
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.release.target_commitish }}
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - uses: actions/cache@v2
+        name: Configure pip caching
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: Install Python dependencies
+        run: |
+          python -m pip install -r requirements.txt
+      - name: Update README
+        run: |-
+          python build_database.py
+      - run: npm install -g sqlite-json
+      - run: sqlite-json flashcards.db -t flashcards > client/src/data/output.json
+      - name: Commit and push if changed
+        run: |-
+          git diff
+          git config --global user.email "ashishsushilpatel@gmail.com"
+          git config --global user.name "Ashish Patel"
+          git add -A
+          git commit -m "chore: update cards" || exit 0
+          git push
