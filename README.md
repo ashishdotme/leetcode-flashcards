@@ -10,6 +10,14 @@
 
 <p align="center">📦 a set of flashcards for most common leetcode questions asked in interviews</p>
 
+<div style='margin:0 auto;width:80%;'>
+  <img src="./assets/website.png" alt="drawing"/>
+</div>
+
+## Flashcards
+
+All flashcards grouped by topic can be found on: https://lc.ashish.me. If you think the flashcards could be improved - please feel free to raise a pull request.
+
 ## Leetcode questions list
   - [Array](https://leetcode.com/list?selectedList=5njkwwpg)
   - [Backtracking](https://leetcode.com/list?selectedList=5nj41i02)
@@ -56,6 +64,8 @@
 - **Backtracking**
   - *questions type* - permutations
 
+## References
+  - [Leetcode patterns](https://github.com/SeanPrashad/leetcode-patterns)
 ## Support
 
 If you find this project useful, you can buy me a cup of coffee
