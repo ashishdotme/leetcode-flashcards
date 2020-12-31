@@ -18,7 +18,7 @@ interface Data {
 
 const Provider: React.FC<Props> = ({ children }) => {
   const [response, setResponse] = useState<Data[]>([])
-  const [cardTopic, setCardTopic] = useState('')
+  const [cardTopic, setCardTopic] = useState('All')
 
   useEffect(() => {
     const localStorageCards = window.localStorage.getItem('cards')
@@ -107,7 +107,7 @@ interface Context {
 const DEFAULT_STATE = {
   dispatch: () => {},
   cardId: 0,
-  cardTopic: '',
+  cardTopic: 'All',
   goBack: () => {},
   response: [],
   setCardTopicOnClick: () => {},

@@ -12,7 +12,7 @@ interface Props {
   }
 }
 
-const CardDetails = ({ card }: Props) => {
+const Card = ({ card }: Props) => {
   const [hideAnswer, setHideAnswer] = useState(true)
   const [hideQuestion, setHideQuestion] = useState(true)
 
@@ -35,7 +35,7 @@ const CardDetails = ({ card }: Props) => {
         )}
       </header>
       <div className="card-content">
-        <p className="title is-4">
+        <p className="title is-5">
           <ReactMarkdown plugins={[gfm]} children={card.front} />
         </p>
         <div className="content">
@@ -45,24 +45,24 @@ const CardDetails = ({ card }: Props) => {
       <footer className="card-footer">
         <p className="card-footer-item">
           {hideQuestion ? (
-            <Button basic color="green" onClick={toggleQuestion}>
+            <span className="button is-primary is-outlined" onClick={toggleQuestion}>
               Reveal Question
-            </Button>
+            </span>
           ) : (
-            <Button basic color="green" onClick={toggleQuestion}>
+            <span className="button is-primary is-outlined" onClick={toggleQuestion}>
               Hide Question
-            </Button>
+            </span>
           )}
         </p>
         <p className="card-footer-item">
           {hideAnswer ? (
-            <Button basic color="green" onClick={toggleAnswer}>
+            <span className="button is-primary is-outlined" onClick={toggleAnswer}>
               Reveal Answer
-            </Button>
+            </span>
           ) : (
-            <Button basic color="green" onClick={toggleAnswer}>
+            <span className="button is-primary is-outlined" onClick={toggleAnswer}>
               Hide Answer
-            </Button>
+            </span>
           )}
         </p>
       </footer>
@@ -70,4 +70,4 @@ const CardDetails = ({ card }: Props) => {
   )
 }
 
-export default CardDetails
+export default Card

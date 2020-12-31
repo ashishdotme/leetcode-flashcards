@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import * as _ from 'lodash'
 import { CardContext } from '../../context/CardContext'
 import Card from './Card'
 
@@ -6,7 +7,7 @@ interface Props {
   cards: any[]
 }
 
-const CardDetails = (props: Props) => {
+const CardContainer = (props: Props) => {
   const context = useContext(CardContext)
   const { cardId, cardTopic } = context
   const filteredReponse =
@@ -15,7 +16,7 @@ const CardDetails = (props: Props) => {
     return <Card card={card} />
   })
 
-  return cardDetails[cardId]
+  return <>{cardDetails[cardId]}</>
 }
 
-export default CardDetails
+export default CardContainer
