@@ -34,7 +34,7 @@ def created_changed_times(repo_path, ref="master"):
 
 
 def build_database(repo_path):
-    all_times = created_changed_times(repo_path)
+    # all_times = created_changed_times(repo_path)
     db = sqlite_utils.Database(repo_path / "flashcards.db")
     table = db.table("flashcards", pk="path")
     for filepath in root.glob("docs/**/*.md"):
@@ -56,7 +56,7 @@ def build_database(repo_path):
             "front": front[0].strip(),
             "back": back[0].strip()
         }
-        record.update(all_times[path])
+        # record.update(all_times[path])
         with db.conn:
             table.upsert(record, alter=True)
 
