@@ -43,6 +43,8 @@ const Provider: React.FC<Props> = ({ children }) => {
         if (cardId <= cardSetLength - 1) {
           return cardId + 1
         }
+        history.push('/')
+        return 0
       case 'previous':
         if (cardId === 0) {
           return cardSetLength - 1
@@ -53,7 +55,6 @@ const Provider: React.FC<Props> = ({ children }) => {
       case 'go back':
         return 0
       default:
-        history.push('/')
         return 0
     }
   }
