@@ -2,9 +2,10 @@
 
 ## Question
 
-Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+Given an unsorted integer array nums, find the smallest missing positive integer.
 
-[2, 7, 11, 15], 9 => [0, 1]
+Input: nums = [1,2,0]
+Output: 3
 
 ## Answer
 
