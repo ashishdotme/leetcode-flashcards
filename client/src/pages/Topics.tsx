@@ -33,7 +33,7 @@ const CardsLanding = () => {
     return (
       <div key={topic} className="card">
         <Card.Content>
-          <Card.Header>{_.capitalize(topic)}</Card.Header>
+          <Card.Header>{_.capitalize(topic.replace('-', ' '))}</Card.Header>
           <Card.Description>
             <Button
               onClick={() => {
