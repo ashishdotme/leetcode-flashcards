@@ -53,6 +53,7 @@ const Provider: React.FC<Props> = ({ children }) => {
       case 'go back':
         return 0
       default:
+        history.push('/')
         return 0
     }
   }
