@@ -2,10 +2,10 @@
 
 ## Question
 
-Given an m x n matrix, return all elements of the matrix in spiral order.
+You are climbing a staircase. It takes n steps to reach the top.
 
-Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
-Output: [1,2,3,6,9,8,7,4,5]
+Each time you can either climb 1 or 2 steps. In how many distinct
+ways can you climb to the top?
 
 ## Answer
 
